@@ -17,9 +17,9 @@
     <link rel="stylesheet" href="./src/css/main.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="main-header">
       <div class="container header__container">
-        <nav class="nav">
+        <nav class="nav header__nav" data-menu>
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#" class="nav__link">Головна</a>
@@ -37,6 +37,9 @@
               <a href="#" class="nav__link">Контакти</a>
             </li>
           </ul>
+          <button class="nav__btn btn-menu" data-open_btn>
+            <span class="btn-menu__icon"></span>
+          </button>
         </nav>
       </div>
     </header>
@@ -399,5 +402,7 @@
         </div>
       </div>
     </footer>
+    <script src="/src/js/background.js"></script>
+    <script src="/src/js/mobile-menu.js"></script>
   </body>
 </html>

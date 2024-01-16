@@ -1,0 +1,35 @@
+.nav {
+  padding: 40px 0px;
+  &__list {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+  }
+
+  &__link {
+    color: $colorTextAdditional;
+    font-weight: 500;
+  }
+}
+.header {
+  border-bottom: 1px solid #a1a1a1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  transition: background-color 0.3s linear;
+
+  &__container {
+    margin: 0 auto;
+  }
+}
+
+.header.scrolled {
+  background-color: #212121bf;
+}
+
+@media (max-width: 1200px) {
+  .nav {
+    padding-inline: 40px;
+  }
+}
