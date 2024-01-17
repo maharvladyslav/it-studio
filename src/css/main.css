@@ -30,6 +30,12 @@ body {
   max-width: 1110px;
 }
 
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
 .button {
   display: inline-block;
   padding: 15px 36px;
