@@ -59,3 +59,36 @@ img {
 .link:hover {
   color: #6396ff;
 }
+
+.projects__container {
+  background: #f6f6f8;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 776px;
+  max-width: 1920px;
+}
+
+.projects__title {
+  margin-top: 100px;
+  margin-bottom: 28px;
+}
+
+.projects__text {
+  width: 730px;
+  line-height: 25px;
+  text-align: center;
+  padding-bottom: 92px;
+}
+
+.projects__cards {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 63px;
+}
+
+.projects__button {
+  width: 200px;
+  height: 45px;
+  text-align: center;
+}
