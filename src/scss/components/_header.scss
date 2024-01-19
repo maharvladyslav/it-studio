@@ -27,6 +27,26 @@
   background-color: #212121bf;
 }
 
+.to-top__button {
+  padding: 20px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.to-top__svg {
+  width: 30px;
+  height: 30px;
+  fill: $colorTextAdditional;
+
+}
+
+.header.scrolled .to-top__button {
+  opacity: 1;
+}
+
 @media (min-width: 480px) {
   .nav {
     padding-inline: 20px;
