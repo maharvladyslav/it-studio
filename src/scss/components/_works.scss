@@ -1,33 +1,33 @@
 .works{
-    background: linear-gradient( #504DC2 50%, #FFF 50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background: linear-gradient(180deg, #504DC2 5%, #5F12D0 15%, #FFF 15%), #C4C4C4  ;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    padding: 100px 0 85px 0;
     &__container{
-        padding: 100px 0 85px 0;
-        margin: 0 auto;
+        padding: 0 20px;
     }
     &__title{
         color: $colorTextAdditional;
-        font-size: 36px;
+        font-size: 30px;
         font-weight: 700;
-        width: 540px;
+        max-width: 540px;
+        text-align: center;
     }
     &__cases{
         display: flex;
         flex-direction: column;
         gap: 30px;
-        padding-top: 70px;
     }
     &__header{
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
         gap: 30px;
+        margin-bottom: 70px;
     }
     &__button{
-        width: 200px;
+        flex-shrink: 1;
     }
 }
 .case{
@@ -36,12 +36,15 @@
     flex-direction: column;
     border-bottom: 1px solid;
     border-color: $colorTextSecondary;
-    padding-bottom: 85px;
-    &__link{
-        margin-top: 17px ;
-    }
+    padding-bottom: 50px;
     &__number{
         color: $colorAccent;
+    }
+    &__text{
+        margin-bottom: 7px ;
+    }
+    &__img{
+        border-radius: 10px;
     }
 }
 @media (min-width: 768px){
@@ -52,33 +55,41 @@
             justify-content: space-between;
             flex-direction: row;
          }
+         &__title{
+            font-size: 36px;
+            text-align: left;
+        }
+        &__cases{
+            align-items: center;
+        }
+}
+    .case{
+            max-width: 70%;
 }
 }
 @media (min-width: 1200px) {
     .works{
-    &__header{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: row;
-        // gap: 270px;
-     }
-    //  &__title{
-    //     width: 540px;
-    //  }
+        background: linear-gradient(180deg, #504DC2 15%, #5F12D0 50%, #FFF 50%), #C4C4C4  ;
      &__container{
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
+        padding: 0;
      }
      &__cases{
         display: flex;
         flex-direction: row;
         border-bottom: 1px solid;
         border-color: $colorTextSecondary;
+        padding-bottom: 85px;
      }
     }
     .case{
         border: none;
+        padding: 0;
+        &__text{
+            margin-bottom: 17px ;
+        }
     }
-    
+
 }

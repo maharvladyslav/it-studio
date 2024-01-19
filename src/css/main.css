@@ -61,36 +61,33 @@ img {
 }
 
 .works {
-  background: linear-gradient(#504DC2 50%, #FFF 50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background: linear-gradient(180deg, #504DC2 5%, #5F12D0 15%, #FFF 15%), #C4C4C4;
+  padding: 100px 0 85px 0;
 }
 .works__container {
-  padding: 100px 0 85px 0;
-  margin: 0 auto;
+  padding: 0 20px;
 }
 .works__title {
   color: #ffffff;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
-  width: 540px;
+  max-width: 540px;
+  text-align: center;
 }
 .works__cases {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding-top: 70px;
 }
 .works__header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   gap: 30px;
+  margin-bottom: 70px;
 }
 .works__button {
-  width: 200px;
+  flex-shrink: 1;
 }
 
 .case {
@@ -99,13 +96,16 @@ img {
   flex-direction: column;
   border-bottom: 1px solid;
   border-color: #999999;
-  padding-bottom: 85px;
-}
-.case__link {
-  margin-top: 17px;
+  padding-bottom: 50px;
 }
 .case__number {
   color: #4985ff;
+}
+.case__text {
+  margin-bottom: 7px;
+}
+.case__img {
+  border-radius: 10px;
 }
 
 @media (min-width: 768px) {
@@ -115,25 +115,39 @@ img {
     justify-content: space-between;
     flex-direction: row;
   }
+  .works__title {
+    font-size: 36px;
+    text-align: left;
+  }
+  .works__cases {
+    align-items: center;
+  }
+  .case {
+    max-width: 70%;
+  }
 }
 @media (min-width: 1200px) {
-  .works__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
+  .works {
+    background: linear-gradient(180deg, #504DC2 15%, #5F12D0 50%, #FFF 50%), #C4C4C4;
   }
   .works__container {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
   }
   .works__cases {
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid;
     border-color: #999999;
+    padding-bottom: 85px;
   }
   .case {
     border: none;
+    padding: 0;
+  }
+  .case__text {
+    margin-bottom: 17px;
   }
 }
