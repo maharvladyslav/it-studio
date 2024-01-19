@@ -1,98 +1,30 @@
-@charset "UTF-8";
-* {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  list-style: none;
-}
-
-button {
-  border: none;
-  outline: none;
-  background-color: transparent;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #323232;
-}
-
-.container {
-  min-width: 320px;
-  max-width: 1110px;
-}
-
-img {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-}
-
-.button {
-  display: inline-block;
-  padding: 15px 36px;
-  color: #ffffff;
-  border-radius: 30px;
-  font-size: inherit;
-  font-weight: 500;
-  background-color: #4985ff;
-  transition: background-color 200ms ease;
-}
-.button:hover {
-  background-color: #6396ff;
-}
-
-.link {
-  color: #4985ff;
-  font-weight: 500;
-  text-decoration: underline;
-  transition: color 200ms ease;
-}
-.link:hover {
-  color: #6396ff;
-}
-
 /* основні стилі*/
 .footer {
   padding: 70px 0 30px;
-  background-color: #f6f6f8;
+  background-color: $colorBackgroundPrimary;
 }
-
 .footer__container {
   padding-inline: 20px;
 }
-
 .footer__list {
   display: flex;
   flex-direction: column;
   gap: 35px;
 }
-
 .item-footer__list {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
 .item-footer__title {
-  color: #000000;
+  color: $colorTextTertiary;
   font-size: 18px;
   font-weight: 600;
   text-align: center;
   margin-bottom: 30px;
 }
-
 .item-footer__link {
-  color: #999999;
+  color: $colorTextSecondary;
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
@@ -100,22 +32,19 @@ img {
 }
 
 .footer__text {
-  color: #999999;
+  color: $colorTextSecondary;
   font-family: Montserrat;
   font-size: 13px;
   font-weight: 400;
   line-height: 158.47%;
   padding: 30px;
 }
-
 .footer__top {
   border-bottom: 1px solid #e0e0e0;
 }
-
 .footer__bottom {
   text-align: center;
 }
-
 /*svg*/
 .item-footer__link::before {
   width: 15px;
@@ -143,6 +72,7 @@ img {
   .item-footer {
     flex-basis: auto;
   }
+
   .footer__container {
     margin: 0 auto;
   }
