@@ -2,7 +2,6 @@
   padding: 40px 0px;
   &__list {
     display: flex;
-    flex-direction: row-reverse;
     gap: 40px;
   }
 
@@ -13,7 +12,7 @@
 }
 .header {
   border-bottom: 1px solid #a1a1a1;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
@@ -28,8 +27,27 @@
   background-color: #212121bf;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 480px) {
   .nav {
-    padding-inline: 40px;
+    padding-inline: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav__list {
+    justify-content: center;
+  }
+
+  .header {
+    position: fixed;
+  }
+}
+@media (min-width: 1200px) {
+  .nav {
+    padding-inline: 0px;
+  }
+
+  .nav__list {
+    justify-content: flex-end;
   }
 }
