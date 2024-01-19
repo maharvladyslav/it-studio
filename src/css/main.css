@@ -192,7 +192,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 10px;
+    row-gap: 20px;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in;
   }
@@ -200,7 +200,7 @@ img {
     transform: translateX(0);
   }
   .nav__link {
-    font-size: 28px;
+    font-size: 45px;
   }
   .nav {
     padding: 40px 20px;
