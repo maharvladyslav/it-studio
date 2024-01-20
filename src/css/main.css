@@ -116,32 +116,36 @@ img {
   text-align: center;
 }
 
+.item-footer__item {
+  position: relative;
+}
+
 /*svg*/
 .item-footer__link--mail::before {
+  content: "";
+  position: absolute;
+  left: -15px;
   width: 15px;
   height: 15px;
-  flex-shrink: 0;
+  background-size: cover;
   background-image: url(/src/images/footer/icon-mail.svg);
 }
 
 .item-footer__link--tel::before {
   width: 15px;
   height: 15px;
-  flex-shrink: 0;
   background-image: url(/src/images/footer/icon-tel.svg);
 }
 
 .item-footer__link--adress::before {
   width: 15px;
   height: 15px;
-  flex-shrink: 0;
   background-image: url(/src/images/footer/icon-gps.svg);
 }
 
-.item-footer__title::before {
+.item-footer__link::before {
   width: 15px;
   height: 15px;
-  flex-shrink: 0;
   background-image: url(/src/images/footer/icon-arrow.svg);
 }
 
