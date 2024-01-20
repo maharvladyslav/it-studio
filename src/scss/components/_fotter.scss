@@ -41,6 +41,7 @@
 }
 .footer__top {
   border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 70px;
 }
 .footer__bottom {
   text-align: center;
@@ -49,34 +50,27 @@
   position: relative;
 }
 /*svg*/
-.item-footer__link--mail::before {
+.item-footer__item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.item-footer__item::before {
   content: "";
-  position: absolute;
-  left: -15px;
   width: 15px;
   height: 15px;
+  background-image: url(../images/footer/icon-arrow.svg);
   background-size: cover;
-  background-image: url(/src/images/footer/icon-mail.svg);
 }
-.item-footer__link--tel::before {
-  width: 15px;
-  height: 15px;
-
-  background-image: url(/src/images/footer/icon-tel.svg);
+.item-footer__item--mail::before {
+  background-image: url(../images/footer/icon-mail.svg);
 }
-.item-footer__link--adress::before {
-  width: 15px;
-  height: 15px;
-
-  background-image: url(/src/images/footer/icon-gps.svg);
+.item-footer__item--tel::before {
+  background-image: url(../images/footer/icon-tel.svg);
 }
-.item-footer__link::before {
-  width: 15px;
-  height: 15px;
-
-  background-image: url(/src/images/footer/icon-arrow.svg);
+.item-footer__item--address::before {
+  background-image: url(../images/footer/icon-gps.svg);
 }
-
 /*responsive*/
 @media (min-width: 568px) {
   .footer__list {
