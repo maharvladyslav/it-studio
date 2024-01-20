@@ -65,6 +65,18 @@ img {
   color: #6396ff;
 }
 
+.nav {
+  padding: 40px 0px;
+}
+.nav__list {
+  display: flex;
+  gap: 40px;
+}
+.nav__link {
+  color: #ffffff;
+  font-weight: 500;
+}
+
 .header {
   border-bottom: 1px solid #a1a1a1;
   position: absolute;
@@ -234,7 +246,6 @@ img {
   }
   .hero__title {
     font-size: 16px;
-
   }
 }
 .projects {
@@ -308,18 +319,8 @@ img {
   .card-project {
     flex-basis: calc((100% - 90px) / 4);
   }
-.nav {
-  padding: 40px 0px;
 }
-.nav__list {
-  display: flex;
-  gap: 40px;
-}
-.nav__link {
-  color: #ffffff;
-  font-weight: 500;
-}
-  /* основні стилі*/
+/* основні стилі*/
 .footer {
   padding: 70px 0 30px;
   background-color: #f6f6f8;
@@ -429,3 +430,4 @@ img {
   .item-footer__title {
     text-align: left;
   }
+}
