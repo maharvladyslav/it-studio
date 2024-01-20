@@ -46,12 +46,29 @@
   text-align: center;
 }
 /*svg*/
-.item-footer__link::before {
+.item-footer__link--mail::before {
   width: 15px;
   height: 15px;
   flex-shrink: 0;
-  fill: aqua;
+  background-image: url(/src/images/footer/icon-mail.svg);
+}
+.item-footer__link--tel::before {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  background-image: url(/src/images/footer/icon-tel.svg);
+}
+.item-footer__link--adress::before {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
   background-image: url(/src/images/footer/icon-gps.svg);
+}
+.item-footer__title::before {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  background-image: url(/src/images/footer/icon-arrow.svg);
 }
 
 /*responsive*/
