@@ -18,6 +18,7 @@
 }
 .item-footer__title {
   color: $colorTextTertiary;
+  font-family: $fontTextPrimary;
   font-size: 18px;
   font-weight: 600;
   text-align: center;
@@ -25,7 +26,6 @@
 }
 .item-footer__link {
   color: $colorTextSecondary;
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 158.47%;
@@ -33,7 +33,7 @@
 
 .footer__text {
   color: $colorTextSecondary;
-  font-family: Montserrat;
+  font-family: $fontTextPrimary;
   font-size: 13px;
   font-weight: 400;
   line-height: 158.47%;
@@ -72,27 +72,24 @@
   background-image: url(../images/footer/icon-gps.svg);
 }
 /*responsive*/
-@media (min-width: 568px) {
+@media (min-width: 768px) {
   .footer__list {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
-  .item-footer {
-    flex-basis: calc((100% - 45px) / 2);
-  }
-}
-@media (min-width: 900px) {
-  .footer__list {
-    display: flex;
-  }
-  .item-footer {
-    flex-basis: auto;
   }
 
   .footer__container {
     margin: 0 auto;
   }
+  .item-footer {
+    flex-basis: calc((100% - 45px) / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .footer__list {
+    display: flex;
+  }
+
   .item-footer {
     flex-basis: calc((100% - 135px) / 4);
   }
