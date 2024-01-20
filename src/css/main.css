@@ -101,6 +101,9 @@ img {
   .projects {
     padding: 75px 0;
   }
+  .projects__container {
+    margin: 0 auto;
+  }
   .projects__title {
     margin-bottom: 20px;
   }
@@ -118,9 +121,6 @@ img {
   }
 }
 @media (min-width: 1200px) {
-  .projects__container {
-    margin: 0 auto;
-  }
   .projects__title {
     margin-bottom: 28px;
   }
