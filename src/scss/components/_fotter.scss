@@ -1,0 +1,99 @@
+/* основні стилі*/
+.footer {
+  padding: 70px 0 30px;
+  background-color: $colorBackgroundPrimary;
+}
+.footer__container {
+  padding-inline: 20px;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.item-footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.item-footer__title {
+  color: $colorTextTertiary;
+  font-family: $fontTextPrimary;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.item-footer__link {
+  color: $colorTextSecondary;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 158.47%;
+}
+
+.footer__text {
+  color: $colorTextSecondary;
+  font-family: $fontTextPrimary;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 158.47%;
+  padding: 30px;
+}
+.footer__top {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 70px;
+}
+.footer__bottom {
+  text-align: center;
+}
+.item-footer__item {
+  position: relative;
+}
+/*svg*/
+.item-footer__item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.item-footer__item::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url(../images/footer/icon-arrow.svg);
+  background-size: cover;
+}
+.item-footer__item--mail::before {
+  background-image: url(../images/footer/icon-mail.svg);
+}
+.item-footer__item--tel::before {
+  background-image: url(../images/footer/icon-tel.svg);
+}
+.item-footer__item--address::before {
+  background-image: url(../images/footer/icon-gps.svg);
+}
+/*responsive*/
+@media (min-width: 768px) {
+  .footer__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer__container {
+    margin: 0 auto;
+  }
+  .item-footer {
+    flex-basis: calc((100% - 45px) / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .footer__list {
+    display: flex;
+  }
+
+  .item-footer {
+    flex-basis: calc((100% - 135px) / 4);
+  }
+  .item-footer__title {
+    text-align: left;
+  }
+}
