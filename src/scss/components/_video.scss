@@ -1,0 +1,64 @@
+.video {
+  background-image: url(../images/video/work.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  height: 570px;
+  margin-bottom: 140px;
+}
+.video__container {
+  flex-direction: column;
+  justify-content: unset;
+}
+.video__title {
+  margin-top: 70px;
+  color: $colorTextAdditional;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 146.28%;
+}
+.video__text {
+  margin-top: 30px;
+  color: #fff;
+  line-height: 158.47%;
+}
+.video__content {
+  position: absolute;
+  bottom: -140px;
+  background-image: url(../images/video/offise.jpg);
+  background-repeat: no-repeat;
+  background-size: calc(100% + 24px) calc(100% + 24px);
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  max-width: 970px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(111, 111, 111, 0.25);
+  aspect-ratio: 16/7.76;
+}
+.play-video__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
+  max-width: 300px;
+  aspect-ratio: 3/1;
+  border-radius: 200px;
+  border: 1px solid #fff;
+  gap: 20px;
+}
+.play-video__icon {
+  max-width: 60px;
+  max-height: 60px;
+}
+.play-video__text {
+  color: #fff;
+  font-weight: 500;
+  line-height: 158.47%;
+}
