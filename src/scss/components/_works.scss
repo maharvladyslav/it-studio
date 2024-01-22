@@ -40,11 +40,13 @@
         color: $colorAccent;
     }
     &__text{
-        margin-bottom: 47px;
+        margin-bottom: 45px;
     }
     &__img{
-        border-radius: 10px;
-        margin-bottom: 30px;
+        border-radius: 10px;    
+    }
+    &__photo{
+         margin-bottom: 30px;
     }
 }
 @media (min-width: 768px){

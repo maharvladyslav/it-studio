@@ -292,10 +292,12 @@ img {
   color: #4985ff;
 }
 .case__text {
-  margin-bottom: 47px;
+  margin-bottom: 45px;
 }
 .case__img {
   border-radius: 10px;
+}
+.case__photo {
   margin-bottom: 30px;
 }
 
