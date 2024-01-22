@@ -280,26 +280,27 @@ img {
 
 .case {
   display: flex;
-  gap: 30px;
   flex-direction: column;
   border-bottom: 1px solid;
   border-color: #999999;
   padding-bottom: 50px;
 }
+.case__title {
+  margin-bottom: 30px;
+}
 .case__number {
   color: #4985ff;
 }
 .case__text {
-  margin-bottom: 7px;
+  margin-bottom: 47;
 }
 .case__img {
   border-radius: 10px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
   .works__header {
-    display: flex;
-    align-items: center;
     justify-content: space-between;
     flex-direction: row;
   }
@@ -325,7 +326,6 @@ img {
     padding: 0;
   }
   .works__cases {
-    display: flex;
     flex-direction: row;
     border-bottom: 1px solid;
     border-color: #999999;
