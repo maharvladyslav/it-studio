@@ -25,6 +25,10 @@
     }
     &__button{
         flex-shrink: 1;
+        &:hover{
+            box-shadow: 0px 0px 10px 0px rgba(111, 111, 111, 0.25);
+            transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
     }
 }
 .case{
@@ -91,4 +95,8 @@
         }
     }
 
+}
+.case:hover{
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

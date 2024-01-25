@@ -277,6 +277,10 @@ img {
 .works__button {
   flex-shrink: 1;
 }
+.works__button:hover {
+  box-shadow: 0px 0px 10px 0px rgba(111, 111, 111, 0.25);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .case {
   display: flex;
@@ -341,6 +345,11 @@ img {
     margin-bottom: 17px;
   }
 }
+.case:hover {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .projects {
   background: #f6f6f8;
   padding: 50px 0;
