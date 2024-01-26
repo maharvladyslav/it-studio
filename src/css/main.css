@@ -374,12 +374,6 @@ img {
   gap: 30px;
 }
 
-.card-project:hover {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: scale(102%);
-  box-shadow: rgba(0, 0, 0, 0.5333333333) 3px 3px 9px 9px;
-}
-
 .projects__button {
   align-self: center;
 }
