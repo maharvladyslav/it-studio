@@ -29,13 +29,12 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 158.47%;
-}
-.item-footer__item:hover {
-  box-shadow: 0px 0px 15px 0px rgba(75, 75, 75, 0.25);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item-footer__link:hover {
-  color: rgb(0, 107, 107);
+  color: $colorTextTertiary;
+  text-shadow: 3px 3px 5px rgb(0, 0, 0);
 }
 
 .footer__text {
