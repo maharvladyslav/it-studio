@@ -44,6 +44,12 @@
   opacity: 0;
   transition: opacity 0.3s ease;
   animation: scrollAnimation 3s cubic-bezier(0.4, 0, 0.2, 1) 0s infinite;
+  display: inline-block;
+
+  &:hover {
+    animation-play-state: paused;
+    
+  }
 }
 
 .to-top__svg {
@@ -60,7 +66,7 @@
   0% {
     transform: translateY(0);
   }
-  
+
   20% {
     transform: translateY(-50px);
   }
