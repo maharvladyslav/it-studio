@@ -144,16 +144,15 @@ img {
 @media (min-width: 1200px) {
   .video {
     height: 570px;
+    margin-bottom: 80px;
+    position: relative;
   }
   .video__text {
     margin-bottom: 70px;
   }
-  .video__content {
-    position: relative;
-  }
   .play-video {
     position: absolute;
-    bottom: -80px;
+    bottom: -140px;
     width: 100vw;
     max-width: 970px;
   }
