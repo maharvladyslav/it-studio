@@ -276,10 +276,10 @@ img {
 }
 .works__button {
   flex-shrink: 1;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .works__button:hover {
   box-shadow: 0px 0px 10px 0px rgba(111, 111, 111, 0.25);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .case {
@@ -287,7 +287,8 @@ img {
   flex-direction: column;
   border-bottom: 1px solid;
   border-color: #999999;
-  padding-bottom: 50px;
+  padding: 0 10px 50px 10px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .case__title {
   margin-bottom: 30px;
@@ -303,6 +304,9 @@ img {
 }
 .case__photo {
   margin-bottom: 30px;
+}
+.case:hover {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 @media (min-width: 768px) {
@@ -339,17 +343,12 @@ img {
   }
   .case {
     border: none;
-    padding: 0;
+    padding: 0 10px 10px 10px;
   }
   .case__text {
     margin-bottom: 17px;
   }
 }
-.case:hover {
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .projects {
   background: #f6f6f8;
   padding: 50px 0;
