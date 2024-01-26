@@ -6,10 +6,12 @@
     <title>It Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
       rel="stylesheet"
@@ -19,7 +21,7 @@
   <body id="body">
     <header class="header" id="main-header">
       <div class="container header__container">
-        <nav class="nav header__nav" data-menu> 
+        <nav class="nav header__nav" data-menu>
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#" class="nav__link">Головна</a>
@@ -403,6 +405,10 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="/src/js/header-background.js"></script>
     <script src="/src/js/mobile-menu.js"></script>
   </body>
