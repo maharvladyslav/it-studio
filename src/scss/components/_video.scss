@@ -84,17 +84,34 @@
 @media (min-width: 1200px) {
   .video {
     height: 570px;
-    margin-bottom: 80px;
+    margin-bottom: 190px;
+  }
+  .video__container {
     position: relative;
+  }
+  .video__content {
+    position: absolute;
+    min-width: 970px;
+    min-height: 430px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .video__text {
     margin-bottom: 70px;
   }
-  .play-video {
+  .video__content::after {
+    content: "";
     position: absolute;
-    bottom: -140px;
-    width: 100vw;
-    max-width: 970px;
+    background: #e0e0e0;
+    width: 1110px;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -85px;
+  }
+  .play-video {
+    aspect-ratio: auto;
+    min-height: 430px;
   }
   .play-video__button {
     padding: 30px;
