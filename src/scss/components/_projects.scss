@@ -35,10 +35,6 @@
 .projects__button {
   align-self: center;
 }
-.projects__button:hover,
-:focus {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 @media (min-width: 768px) {
   .projects {
     padding: 75px 0;
