@@ -20,7 +20,7 @@
   </head>
   <body id="body">
     <header class="header" id="main-header">
-      <div class="container header__container">
+      <div class="container header__container" data-aos="fade-up">
         <nav class="nav header__nav" data-menu>
           <ul class="nav__list">
             <li class="nav__item">
@@ -45,7 +45,12 @@
         </nav>
       </div>
       <div class="scroll-to-top to-top">
-        <a href="#body" class="to-top__button button" id="to-top">
+        <a
+          href="#body"
+          class="to-top__button button"
+          id="to-top"
+          data-aos="fade-up"
+        >
           <svg class="to-top__svg">
             <use href="/src/images/icons.svg#icon-arrow-up"></use>
           </svg>
@@ -183,10 +188,14 @@
         </div>
       </section>
       <section class="works">
-        <div class="works__container container">
+        <div class="works__container container" data-aos="fade-up-right">
           <header class="works__header">
-            <h2 class="works__title">Наші роботи на яких ми спеціалізуємось</h2>
-            <a href="" class="works__button button">Всі послуги</a>
+            <h2 class="works__title" data-aos="fade-up-right">
+              Наші роботи на яких ми спеціалізуємось
+            </h2>
+            <a href="" class="works__button button" data-aos="fade-up-right"
+              >Всі послуги</a
+            >
           </header>
           <div class="works__cases">
             <article class="case">
@@ -194,18 +203,21 @@
                 <img
                   src="./src/images/works/work.jpg"
                   alt="Дослідження і упаковка"
+                  data-aos="fade-up-right"
                   class="case__img"
                 />
               </div>
-              <h3 class="case__title">
+              <h3 class="case__title" data-aos="fade-up-right">
                 <span class="case__number">01.</span>Дослідження і упаковка
               </h3>
-              <p class="case__text">
+              <p class="case__text" data-aos="fade-up-right">
                 Lorem Ipsum - це текст-"риба", що часто використовується в пресі
                 та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
                 латиниці з початку XVI ст.
               </p>
-              <a href="" class="case__link link">Детальніше</a>
+              <a href="" class="case__link link" data-aos="fade-up-right"
+                >Детальніше</a
+              >
             </article>
             <article class="case">
               <div class="case__photo">
@@ -213,17 +225,21 @@
                   src="./src/images/works/work.jpg"
                   alt="Дослідження і упаковка"
                   class="case__img"
+                  data-aos="fade-up-right"
                 />
               </div>
               <h3 class="case__title">
-                <span class="case__number">01.</span>Дослідження і упаковка
+                <span class="case__number" data-aos="fade-up-right">01.</span
+                >Дослідження і упаковка
               </h3>
-              <p class="case__text">
+              <p class="case__text" data-aos="fade-up-right">
                 Lorem Ipsum - це текст-"риба", що часто використовується в пресі
                 та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
                 латиниці з початку XVI ст.
               </p>
-              <a href="" class="case__link link">Детальніше</a>
+              <a href="" class="case__link link" data-aos="fade-up-right"
+                >Детальніше</a
+              >
             </article>
             <article class="case">
               <div class="case__photo">
@@ -231,9 +247,10 @@
                   src="./src/images/works/work.jpg"
                   alt="Дослідження і упаковка"
                   class="case__img"
+                  data-aos="fade-up-right"
                 />
               </div>
-              <h3 class="case__title">
+              <h3 class="case__title" data-aos="fade-up-right">
                 <span class="case__number">01.</span>Дослідження і упаковка
               </h3>
               <p class="case__text">
@@ -241,15 +258,19 @@
                 та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
                 латиниці з початку XVI ст.
               </p>
-              <a href="#" class="case__link link">Детальніше</a>
+              <a href="#" class="case__link link" data-aos="fade-up-right"
+                >Детальніше</a
+              >
             </article>
           </div>
         </div>
       </section>
       <section class="projects">
         <div class="container projects__container">
-          <h2 class="projects__title">Наші проекти</h2>
-          <p class="projects__text">
+          <h2 class="projects__title" data-aos="fade-down-left">
+            Наші проекти
+          </h2>
+          <p class="projects__text" data-aos="zoom-in">
             Lorem Ipsum - це текст-"риба", що часто використовується в пресі та
             веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
             латиниці з початку XVI ст.
@@ -260,12 +281,22 @@
                 src="./src/images/projects/project01.jpg"
                 alt="Проект №1"
                 class="card-project__img"
+                data-aos="zoom-in"
               />
             </li>
             <li class="card-project">
               <img
                 src="./src/images/projects/project01.jpg"
                 alt="Проект №1"
+                class="card-project__img"
+                data-aos="zoom-in"
+              />
+            </li>
+            <li class="card-project">
+              <img
+                src="./src/images/projects/project01.jpg"
+                alt="Проект №1"
+                data-aos="zoom-in"
                 class="card-project__img"
               />
             </li>
@@ -274,17 +305,13 @@
                 src="./src/images/projects/project01.jpg"
                 alt="Проект №1"
                 class="card-project__img"
-              />
-            </li>
-            <li class="card-project">
-              <img
-                src="./src/images/projects/project01.jpg"
-                alt="Проект №1"
-                class="card-project__img"
+                data-aos="zoom-in"
               />
             </li>
           </ul>
-          <a href="#" class="projects__button button">Всі проекти</a>
+          <a href="#" class="projects__button button" data-aos="zoom-in"
+            >Всі проекти</a
+          >
         </div>
       </section>
       <section class="video">
@@ -327,7 +354,7 @@
       <div class="footer__container container">
         <div class="footer__top">
           <ul class="footer__list">
-            <li class="footer__item item-footer">
+            <li class="footer__item item-footer" data-aos="fade-right">
               <h2 class="item-footer__title">Контактная информация</h2>
               <ul class="item-footer__list">
                 <li class="item-footer__item item-footer__item--mail">
@@ -347,7 +374,7 @@
                 </li>
               </ul>
             </li>
-            <li class="footer__item item-footer">
+            <li class="footer__item item-footer" data-aos="fade-right">
               <h2 class="item-footer__title">Основні посилання</h2>
               <ul class="item-footer__list">
                 <li class="item-footer__item">
@@ -364,7 +391,7 @@
                 </li>
               </ul>
             </li>
-            <li class="footer__item item-footer">
+            <li class="footer__item item-footer" data-aos="fade-right">
               <h2 class="item-footer__title">Наші проекти</h2>
               <ul class="item-footer__list">
                 <li class="item-footer__item">
@@ -381,7 +408,7 @@
                 </li>
               </ul>
             </li>
-            <li class="footer__item item-footer">
+            <li class="footer__item item-footer" data-aos="fade-right">
               <h2 class="item-footer__title">Соціальні мережі</h2>
               <ul class="item-footer__list">
                 <li class="item-footer__item">
