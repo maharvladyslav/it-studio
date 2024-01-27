@@ -119,6 +119,9 @@ img {
   height: 100px;
   margin-right: 20px;
 }
+.statistics__icon:hover {
+  fill: black;
+}
 
 .statistics__count {
   font-size: 36px;
@@ -158,5 +161,17 @@ img {
   .statistics__icon {
     width: 30px;
     height: 30px;
+  }
+}
+@media (min-width: 1110px) {
+  .adventages__body {
+    padding-bottom: 90px;
+    margin-bottom: 70px;
+  }
+  .adventages__body {
+    gap: 120px;
+  }
+  .adventages__statistics {
+    gap: 100px;
   }
 }
