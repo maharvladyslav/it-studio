@@ -248,9 +248,6 @@ img {
     font-size: 16px;
   }
 }
-
-  
-
 .adventages {
   padding: 50px 0;
   background: #f6f6f8;
@@ -266,13 +263,13 @@ img {
   gap: 30px;
   margin-bottom: 30px;
 }
-.adventages__discription {  
-    display: flex;
+
+.adventages__discription {
+  display: flex;
   flex-direction: column;
 }
 
-
-  .adventages__title {
+.adventages__title {
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -362,7 +359,7 @@ img {
   .adventages__statistics {
     gap: 100px;
   }
-
+}
 .works {
   background: linear-gradient(180deg, #504DC2 5%, #5F12D0 15%, #FFF 15%), #C4C4C4;
   padding: 100px 0 85px 0;
@@ -462,10 +459,10 @@ img {
 }
 
 .projects__container {
-  padding-inline: 20px;}
-
-
-
+  padding-inline: 20px;
+  display: flex;
+  flex-direction: column;
+}
 
 .projects__title {
   color: #000000;
@@ -652,6 +649,5 @@ img {
   }
   .item-footer__title {
     text-align: left;
-
   }
 }
