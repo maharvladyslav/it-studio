@@ -248,6 +248,121 @@ img {
     font-size: 16px;
   }
 }
+
+  
+
+.adventages {
+  padding: 50px 0;
+  background: #f6f6f8;
+}
+
+.adventages__container {
+  padding-inline: 20px;
+}
+
+.adventages__body {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.adventages__discription {  
+    display: flex;
+  flex-direction: column;
+}
+
+
+  .adventages__title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  line-height: 146.28%;
+}
+
+.adventages__text {
+  text-align: center;
+  color: #999999;
+  margin-bottom: 30px;
+  line-height: 158.47%;
+}
+
+.adventages__link {
+  align-self: center;
+  color: #4985ff;
+  font-weight: 500;
+}
+
+.adventages__img {
+  border-radius: 30px;
+}
+
+.adventages__statistics {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statistics__icon {
+  fill: #4985ff;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.statistics__count {
+  font-size: 36px;
+  color: #000000;
+}
+
+.statistics__text {
+  color: #999999;
+}
+
+@media (min-width: 768px) {
+  .adventages {
+    padding: 75px 0;
+  }
+  .adventages__container {
+    margin: 0 auto;
+  }
+  .adventages__body {
+    flex-direction: row;
+    border-bottom: 2px solid #E0E0E0;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
+  .adventages__title {
+    text-align: left;
+  }
+  .adventages__text {
+    text-align: left;
+  }
+  .adventages__link {
+    align-self: self-start;
+  }
+  .adventages__statistics {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .statistics__icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .adventages__body {
+    padding-bottom: 90px;
+    margin-bottom: 70px;
+  }
+  .adventages__body {
+    gap: 120px;
+  }
+  .adventages__statistics {
+    gap: 100px;
+  }
+
 .works {
   background: linear-gradient(180deg, #504DC2 5%, #5F12D0 15%, #FFF 15%), #C4C4C4;
   padding: 100px 0 85px 0;
@@ -347,10 +462,10 @@ img {
 }
 
 .projects__container {
-  padding-inline: 20px;
-  display: flex;
-  flex-direction: column;
-}
+  padding-inline: 20px;}
+
+
+
 
 .projects__title {
   color: #000000;
@@ -537,5 +652,6 @@ img {
   }
   .item-footer__title {
     text-align: left;
+
   }
 }
