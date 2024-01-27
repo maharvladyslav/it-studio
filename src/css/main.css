@@ -119,9 +119,6 @@ img {
   height: 100px;
   margin-right: 20px;
 }
-.statistics__icon:hover {
-  fill: black;
-}
 
 .statistics__count {
   font-size: 36px;
