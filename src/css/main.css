@@ -330,7 +330,7 @@ img {
   .works__cases {
     flex-direction: row;
     border-bottom: 1px solid;
-    border-color: #999999;
+    border-color: #e0e0e0;
     padding-bottom: 85px;
   }
   .case {
