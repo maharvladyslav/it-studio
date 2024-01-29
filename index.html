@@ -6,20 +6,22 @@
     <title>It Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/css/main.css" />
   </head>
-  <body>
-    <header class="header">
+  <body id="body">
+    <header class="header" id="main-header">
       <div class="container header__container">
-        <nav class="nav">
+        <nav class="nav header__nav" data-menu>
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#" class="nav__link">Головна</a>
@@ -37,7 +39,17 @@
               <a href="#" class="nav__link">Контакти</a>
             </li>
           </ul>
+          <button class="nav__btn btn-menu" data-open_btn>
+            <span class="btn-menu__icon"></span>
+          </button>
         </nav>
+      </div>
+      <div class="scroll-to-top to-top">
+        <a href="#body" class="to-top__button button" id="to-top">
+          <svg class="to-top__svg">
+            <use href="/src/images/icons.svg#icon-arrow-up"></use>
+          </svg>
+        </a>
       </div>
     </header>
     <main class="main">
@@ -318,25 +330,21 @@
             <li class="footer__item item-footer">
               <h2 class="item-footer__title">Контактная информация</h2>
               <ul class="item-footer__list">
-                <li class="item-footer__item">
-                  <a
-                    href="mailto:test@test.ua"
-                    class="item-footer__link item-footer__link--mail"
+                <li class="item-footer__item item-footer__item--mail">
+                  <a href="mailto:test@test.ua" class="item-footer__link"
                     >test@test.ua</a
                   >
                 </li>
-                <li class="item-footer__item">
-                  <a
-                    href="tel:+380965556699"
-                    class="item-footer__link item-footer__link--tel"
+                <li class="item-footer__item item-footer__item--tel">
+                  <a href="tel:+380965556699" class="item-footer__link"
                     >+3 8096 555 66 99</a
                   >
                 </li>
-                <li class="item-footer__item">
-                  <a
-                    href="#"
-                    class="item-footer__link item-footer__link--adress"
-                    ><adress>Тернопіль вул С. Бандери</adress></a
+                <li class="item-footer__item item-footer__item--address">
+                  <a href="#"
+                    ><adress class="item-footer__link"
+                      >Тернопіль вул С. Бандери</adress
+                    ></a
                   >
                 </li>
               </ul>
@@ -399,5 +407,11 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="/src/js/header-background.js"></script>
+    <script src="/src/js/mobile-menu.js"></script>
   </body>
 </html>
