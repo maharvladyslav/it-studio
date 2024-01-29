@@ -465,7 +465,7 @@ img {
   }
 }
 .works {
-  background: linear-gradient(180deg, #504DC2 5%, #5F12D0 15%, #FFF 15%), #C4C4C4;
+  background: linear-gradient(180deg, #504dc2 5%, #5f12d0 15%, #fff 15%), #c4c4c4;
   padding: 100px 0 85px 0;
 }
 .works__container {
@@ -498,7 +498,7 @@ img {
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid;
-  border-color: #999999;
+  border-color: #e0e0e0;
   padding-bottom: 50px;
 }
 .case__title {
@@ -535,7 +535,7 @@ img {
 }
 @media (min-width: 1200px) {
   .works {
-    background: linear-gradient(180deg, #504DC2 15%, #5F12D0 50%, #FFF 50%), #C4C4C4;
+    background: linear-gradient(180deg, #504dc2 15%, #5f12d0 50%, #fff 50%), #c4c4c4;
   }
   .works__container {
     display: flex;
@@ -546,7 +546,7 @@ img {
   .works__cases {
     flex-direction: row;
     border-bottom: 1px solid;
-    border-color: #999999;
+    border-color: #e0e0e0;
     padding-bottom: 85px;
   }
   .case {
