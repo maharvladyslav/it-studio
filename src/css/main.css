@@ -242,12 +242,17 @@ img {
 }
 .hero {
   height: 100vh;
-  background-image: url(/src/images/hero/background.jpg);
+  background-image: url(/src/images/hero/background@1x.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(/src/images/hero/background@2x.jpg);
+  }
 }
 .hero__container {
   margin: 0 auto;
