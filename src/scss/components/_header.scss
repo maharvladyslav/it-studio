@@ -8,15 +8,12 @@
   &__link {
     color: $colorTextAdditional;
     font-weight: 500;
-    transition: border-bottom 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-block;
+  }
 
-    &:hover {
-      border-bottom: 2px solid $colorAccent;
-      padding-bottom: 30px;
-      transform: scale(1.2);
-    }
+  &__item {
+    position: relative;
   }
 }
 .header {
@@ -76,6 +73,15 @@
 
   60% {
     transform: translateY(-50px);
+
+@keyframes borderScale {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(100%);
+
   }
 }
 
@@ -97,6 +103,36 @@
 @media (min-width: 1200px) {
   .nav {
     padding-inline: 0px;
+
+    &__link:hover {
+      transform: scale(1.2);
+    }
+
+    &__link:focus {
+      transform: scale(1.2);
+    }
+
+    .nav__item:hover::after {
+      content: "";
+      height: 2px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -40px;
+      background-color: $colorTextAdditional;
+      animation: borderScale 0.5s ease 0s 1;
+    }
+
+    .nav__item:focus::after {
+      content: "";
+      height: 2px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -40px;
+      background-color: $colorTextAdditional;
+      animation: borderScale 0.5s ease 0s 1;
+    }
   }
 
   .nav__list {
