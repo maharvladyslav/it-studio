@@ -133,8 +133,10 @@ img {
     justify-content: flex-end;
   }
 }
+.services {
+  padding: 50px 0;
+}
 .services__container {
-  margin: 0 auto;
   padding-inline: 20px;
   display: flex;
   flex-direction: column;
@@ -145,7 +147,6 @@ img {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 32px;
-  margin-top: 110px;
   text-align: center;
 }
 .services__text {
@@ -187,7 +188,7 @@ img {
 }
 .service__photo {
   border: 1px solid #999999;
-  padding: 35px;
+  padding: 10px;
   border-radius: 50%;
   margin-bottom: 10px;
 }
@@ -199,18 +200,31 @@ img {
 }
 
 @media (min-width: 768px) {
+  .services__container {
+    margin: 0 auto;
+  }
   .services__items {
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 25px;
   }
   .services__item {
-    flex-basis: calc((100% - 50px) / 2);
+    flex-basis: calc((100% - 50px) / 3);
   }
 }
 @media (min-width: 1200px) {
   .services__item {
     flex-direction: row;
     gap: 15px;
+  }
+  .service {
+    align-items: flex-start;
+  }
+  .service__photo {
+    margin-bottom: 0;
+  }
+  .service__heading {
+    padding-top: 45px;
   }
   .service__title {
     text-align: left;
