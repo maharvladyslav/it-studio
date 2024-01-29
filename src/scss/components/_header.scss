@@ -46,9 +46,8 @@
   animation: scrollAnimation 3s cubic-bezier(0.4, 0, 0.2, 1) 0s infinite;
   display: inline-block;
 
-  &:hover {
+  &:active {
     animation-play-state: paused;
-    
   }
 }
 
@@ -102,5 +101,11 @@
 
   .nav__list {
     justify-content: flex-end;
+  }
+
+  .to-top__button {
+    &:hover {
+      animation-play-state: paused;
+    }
   }
 }
