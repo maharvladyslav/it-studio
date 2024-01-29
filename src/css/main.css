@@ -592,6 +592,8 @@ img {
 
 .card-project {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .card-project:hover {
@@ -632,7 +634,7 @@ img {
   }
   .projects__cards {
     gap: 30px;
-    margin-bottom: 92px;
+    margin-bottom: 50px;
   }
   .card-project {
     flex-basis: calc((100% - 90px) / 4);
