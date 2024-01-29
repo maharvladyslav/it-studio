@@ -105,6 +105,11 @@ img {
   right: 30px;
   opacity: 0;
   transition: opacity 0.3s ease;
+  animation: scrollAnimation 3s cubic-bezier(0.4, 0, 0.2, 1) 0s infinite;
+  display: inline-block;
+}
+.to-top__button:active {
+  animation-play-state: paused;
 }
 
 .to-top__svg {
@@ -117,12 +122,27 @@ img {
   opacity: 1;
 }
 
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-50px);
+  }
+  40% {
+    transform: translateY(-25px);
+  }
+  60% {
+    transform: translateY(-50px);
+
 @keyframes borderScale {
   0% {
     transform: scaleX(0);
   }
   100% {
     transform: scaleX(100%);
+
   }
 }
 @media (min-width: 480px) {
@@ -170,6 +190,9 @@ img {
   }
   .nav__list {
     justify-content: flex-end;
+  }
+  .to-top__button:hover {
+    animation-play-state: paused;
   }
 }
 .services {
