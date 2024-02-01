@@ -569,7 +569,7 @@ img {
   margin-bottom: 70px;
 }
 .works__button {
-  flex-shrink: 1;
+  flex-shrink: 0;
 }
 
 .case {
