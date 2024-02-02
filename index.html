@@ -82,9 +82,11 @@
           <div class="services__items">
             <article class="services__item service">
               <div class="service__photo">
-                <svg class="servide__icon">
-                  <use href="./src/images/icons.svg#icon-project"></use>
-                </svg>
+                <div class="photo__border">
+                  <svg class="service__icon">
+                    <use href="./src/images/icons.svg#icon-project"></use>
+                  </svg>
+                </div>
               </div>
               <hgroup class="service__heading">
                 <h3 class="service__title">Створення сайтів</h3>
@@ -96,9 +98,11 @@
             </article>
             <article class="services__item service">
               <div class="service__photo">
-                <svg class="servide__icon">
-                  <use href="./src/images/icons.svg#icon-project"></use>
-                </svg>
+                <div class="photo__border">
+                  <svg class="service__icon">
+                    <use href="./src/images/icons.svg#icon-project"></use>
+                  </svg>
+                </div>
               </div>
               <hgroup class="service__heading">
                 <h3 class="service__title">Створення сайтів</h3>
@@ -110,9 +114,11 @@
             </article>
             <article class="services__item service">
               <div class="service__photo">
-                <svg class="servide__icon">
-                  <use href="./src/images/icons.svg#icon-project"></use>
-                </svg>
+                <div class="photo__border">
+                  <svg class="service__icon">
+                    <use href="./src/images/icons.svg#icon-project"></use>
+                  </svg>
+                </div>
               </div>
               <hgroup class="service__heading">
                 <h3 class="service__title">Створення сайтів</h3>
@@ -143,7 +149,11 @@
             <div class="adventages__photo">
               <img
                 class="adventages__img"
-                src="./src/images/advantages/01.jpg"
+                srcset="
+                  /src/images/advantages/adventages@1x.jpg 1x,
+                  /src/images/advantages/adventages@1x.jpg 2x
+                "
+                src="/src/images/advantages/adventages@1x.jpg"
                 alt="Високі стандарти розробки"
               />
             </div>
@@ -203,8 +213,12 @@
             <article class="case" data-aos="fade-up" data-aos-duration="3000">
               <div class="case__photo">
                 <img
-                  src="./src/images/works/work.jpg"
+                  src="./src/images/works/work@1x.jpg"
                   alt="Дослідження і упаковка"
+                  srcset="
+                    ./src/images/works/work@1x.jpg 1x,
+                    ./src/images/works/work@2x.jpg 2x
+                  "
                   class="case__img"
                 />
               </div>
@@ -221,8 +235,12 @@
             <article class="case" data-aos="fade-up" data-aos-duration="3000">
               <div class="case__photo">
                 <img
-                  src="./src/images/works/work.jpg"
+                  src="./src/images/works/work@1x.jpg"
                   alt="Дослідження і упаковка"
+                  srcset="
+                    ./src/images/works/work@1x.jpg 1x,
+                    ./src/images/works/work@2x.jpg 2x
+                  "
                   class="case__img"
                 />
               </div>
@@ -239,8 +257,12 @@
             <article class="case" data-aos="fade-up" data-aos-duration="3000">
               <div class="case__photo">
                 <img
-                  src="./src/images/works/work.jpg"
+                  src="./src/images/works/work@1x.jpg"
                   alt="Дослідження і упаковка"
+                  srcset="
+                    ./src/images/works/work@1x.jpg 1x,
+                    ./src/images/works/work@2x.jpg 2x
+                  "
                   class="case__img"
                 />
               </div>
@@ -276,7 +298,11 @@
               data-aos-anchor-placement="bottom-bottom"
             >
               <img
-                src="./src/images/projects/project01.jpg"
+                src="./src/images/projects/project@1x.jpg"
+                srcset="
+                  ./src/images/projects/project@1x.jpg 1x,
+                  ./src/images/projects/project@2x.jpg 2x
+                "
                 alt="Проект №1"
                 class="card-project__img"
               />
@@ -287,7 +313,11 @@
               data-aos-anchor-placement="bottom-bottom"
             >
               <img
-                src="./src/images/projects/project01.jpg"
+                src="./src/images/projects/project@1x.jpg"
+                srcset="
+                  ./src/images/projects/project@1x.jpg 1x,
+                  ./src/images/projects/project@2x.jpg 2x
+                "
                 alt="Проект №1"
                 class="card-project__img"
               />
@@ -298,7 +328,11 @@
               data-aos-anchor-placement="bottom-bottom"
             >
               <img
-                src="./src/images/projects/project01.jpg"
+                src="./src/images/projects/project@1x.jpg"
+                srcset="
+                  ./src/images/projects/project@1x.jpg 1x,
+                  ./src/images/projects/project@2x.jpg 2x
+                "
                 alt="Проект №1"
                 class="card-project__img"
               />
@@ -309,7 +343,11 @@
               data-aos-anchor-placement="bottom-bottom"
             >
               <img
-                src="./src/images/projects/project01.jpg"
+                src="./src/images/projects/project@1x.jpg"
+                srcset="
+                  ./src/images/projects/project@1x.jpg 1x,
+                  ./src/images/projects/project@2x.jpg 2x
+                "
                 alt="Проект №1"
                 class="card-project__img"
               />
@@ -385,12 +423,24 @@
                     >+3 8096 555 66 99</a
                   >
                 </li>
+
                 <li
                   class="item-footer__item item-footer__item--address"
                   data-aos="fade-up-right"
                 >
                   <a href="#" class="item-footer__link"
                     ><adress>Тернопіль вул С. Бандери</adress></a
+                  >
+                </li>
+
+                <li
+                  class="item-footer__item item-footer__item--address"
+                  data-aos="fade-up-right"
+                >
+                  <a href="#"
+                    ><adress class="item-footer__link"
+                      >Тернопіль вул С. Бандери</adress
+                    ></a
                   >
                 </li>
               </ul>

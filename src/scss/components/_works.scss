@@ -1,102 +1,102 @@
-.works{
-    background: linear-gradient(180deg, #504DC2 5%, #5F12D0 15%, #FFF 15%), #C4C4C4  ;
-    padding: 100px 0 85px 0;
-    &__container{
-        padding: 0 20px;
-    }
-    &__title{
-        color: $colorTextAdditional;
-        font-size: 30px;
-        font-weight: 700;
-        max-width: 540px;
-        text-align: center;
-    }
-    &__cases{
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-    &__header{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        margin-bottom: 70px;
-    }
-    &__button{
-        flex-shrink: 1;
-        &:hover{
-            box-shadow: 0px 0px 10px 0px rgba(111, 111, 111, 0.25);
-            transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    }
-}
-.case{
+.works {
+  background: linear-gradient(180deg, #504dc2 5%, #5f12d0 15%, #fff 15%),
+    #c4c4c4;
+  padding: 100px 0 85px 0;
+  &__container {
+    padding: 0 20px;
+  }
+  &__title {
+    color: $colorTextAdditional;
+    font-size: 30px;
+    font-weight: 700;
+    max-width: 540px;
+    text-align: center;
+  }
+  &__cases {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid;
-    border-color: $colorTextSecondary;
-    padding-bottom: 50px;
-    &__title{
-        margin-bottom: 30px;
-    }
-    &__number{
-        color: $colorAccent;
-    }
-    &__text{
-        margin-bottom: 45px;
-    }
-    &__img{
-        border-radius: 10px;    
-    }
-    &__photo{
-         margin-bottom: 30px;
-    }
+    gap: 30px;
+  }
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 70px;
+  }
+  &__button {
+    flex-shrink: 0;
+  }
 }
-@media (min-width: 768px){
-    .works{
-        &__header{
-            justify-content: space-between;
-            flex-direction: row;
-         }
-         &__title{
-            font-size: 36px;
-            text-align: left;
-        }
-        &__cases{
-            align-items: center;
-        }
+.case {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid;
+  border-color: $colorTextSecondary;
+  padding: 5px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__number {
+    color: $colorAccent;
+  }
+  &__text {
+    margin-bottom: 45px;
+  }
+  &__img {
+    border-radius: 10px;
+  }
+
+  &__photo {
+    margin-bottom: 30px;
+  }
 }
-    .case{
-            max-width: 70%;
-}
+@media (min-width: 768px) {
+  .works {
+    &__header {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+    &__title {
+      font-size: 36px;
+      text-align: left;
+    }
+    &__cases {
+      align-items: center;
+    }
+  }
+  .case {
+    max-width: 70%;
+  }
 }
 @media (min-width: 1200px) {
-    .works{
-        background: linear-gradient(180deg, #504DC2 15%, #5F12D0 50%, #FFF 50%), #C4C4C4  ;
-     &__container{
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        padding: 0;
-     }
-     &__cases{
-        flex-direction: row;
-        border-bottom: 1px solid;
-        border-color: $colorTextSecondary;
-        padding-bottom: 85px;
-     }
+  .works {
+    background: linear-gradient(180deg, #504dc2 15%, #5f12d0 50%, #fff 50%),
+      #c4c4c4;
+    &__container {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      padding: 0;
     }
-    .case{
-        border: none;
-        padding: 0;
-        &__text{
-            margin-bottom: 17px ;
-        }
+    &__cases {
+      flex-direction: row;
+      border-bottom: 1px solid;
+      border-color: $colorTextSecondary;
+      padding-bottom: 85px;
     }
-
-}
-.case:hover{
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .case {
+    border-bottom: none;
+    border-radius: 10px;
+    overflow: hidden;
+    &__text {
+      margin-bottom: 17px;
+    }
+    &:hover {
+      box-shadow: 0px 0px 4px 4px $colorTextSecondary;
+    }
+  }
 }
