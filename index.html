@@ -24,19 +24,19 @@
         <nav class="nav header__nav" data-menu>
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link">Головна</a>
+              <a href="#main" class="nav__link">Головна</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Наші проекти</a>
+              <a href="#projects" class="nav__link">Наші проекти</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Послуги</a>
+              <a href="#works" class="nav__link">Послуги</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Новини</a>
+              <a href="#news" class="nav__link">Новини</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Контакти</a>
+              <a href="#contacs" class="nav__link">Контакти</a>
             </li>
           </ul>
           <button class="nav__btn btn-menu" data-open_btn>
@@ -53,13 +53,15 @@
       </div>
     </header>
     <main class="main">
-      <section class="hero">
+      <section class="hero" id="main">
         <div class="container hero__container">
+
           <h1 class="hero__title" data-aos="fade-up">Передова IT студія</h1>
           <h2 class="hero__subtitle" data-aos="fade-up">
             Ми створюємо легкі рішення важких задач і проблем
           </h2>
           <a href="#" class="button hero__button" data-aos="fade-up"
+
             >Наші проекти</a
           >
         </div>
@@ -77,9 +79,11 @@
           <div class="services__items">
             <article class="services__item service">
               <div class="service__photo">
-                <svg class="servide__icon">
-                  <use href="./src/images/icons.svg#icon-project"></use>
-                </svg>
+                <div class="photo__border">
+                  <svg class="service__icon">
+                    <use href="./src/images/icons.svg#icon-project"></use>
+                  </svg>
+                </div>
               </div>
               <hgroup class="service__heading">
                 <h3 class="service__title">Створення сайтів</h3>
@@ -91,9 +95,11 @@
             </article>
             <article class="services__item service">
               <div class="service__photo">
-                <svg class="servide__icon">
-                  <use href="./src/images/icons.svg#icon-project"></use>
-                </svg>
+                <div class="photo__border">
+                  <svg class="service__icon">
+                    <use href="./src/images/icons.svg#icon-project"></use>
+                  </svg>
+                </div>
               </div>
               <hgroup class="service__heading">
                 <h3 class="service__title">Створення сайтів</h3>
@@ -105,9 +111,11 @@
             </article>
             <article class="services__item service">
               <div class="service__photo">
-                <svg class="servide__icon">
-                  <use href="./src/images/icons.svg#icon-project"></use>
-                </svg>
+                <div class="photo__border">
+                  <svg class="service__icon">
+                    <use href="./src/images/icons.svg#icon-project"></use>
+                  </svg>
+                </div>
               </div>
               <hgroup class="service__heading">
                 <h3 class="service__title">Створення сайтів</h3>
@@ -138,7 +146,11 @@
             <div class="adventages__photo">
               <img
                 class="adventages__img"
-                src="./src/images/advantages/01.jpg"
+                srcset="
+                  /src/images/advantages/adventages@1x.jpg 1x,
+                  /src/images/advantages/adventages@1x.jpg 2x
+                "
+                src="/src/images/advantages/adventages@1x.jpg"
                 alt="Високі стандарти розробки"
               />
             </div>
@@ -184,6 +196,7 @@
           </footer>
         </div>
       </section>
+
       <section class="works" data-aos="fade-up">
         <div class="works__container container">
           <header class="works__header">
@@ -191,15 +204,21 @@
               Наші роботи на яких ми спеціалізуємось
             </h2>
             <a href="" class="works__button button" data-aos="fade-left"
+
               >Всі послуги</a
             >
           </header>
           <div class="works__cases">
-            <article class="case" data-aos="fade-down-right">
+
+
               <div class="case__photo">
                 <img
-                  src="./src/images/works/work.jpg"
+                  src="./src/images/works/work@1x.jpg"
                   alt="Дослідження і упаковка"
+                  srcset="
+                    ./src/images/works/work@1x.jpg 1x,
+                    ./src/images/works/work@2x.jpg 2x
+                  "
                   class="case__img"
                 />
               </div>
@@ -215,11 +234,17 @@
                 >Детальніше</a
               >
             </article>
+
             <article class="case" data-aos="fade-up">
+
               <div class="case__photo">
                 <img
-                  src="./src/images/works/work.jpg"
+                  src="./src/images/works/work@1x.jpg"
                   alt="Дослідження і упаковка"
+                  srcset="
+                    ./src/images/works/work@1x.jpg 1x,
+                    ./src/images/works/work@2x.jpg 2x
+                  "
                   class="case__img"
                 />
               </div>
@@ -235,11 +260,17 @@
                 >Детальніше</a
               >
             </article>
+
             <article class="case" data-aos="fade-up-left">
+
               <div class="case__photo">
                 <img
-                  src="./src/images/works/work.jpg"
+                  src="./src/images/works/work@1x.jpg"
                   alt="Дослідження і упаковка"
+                  srcset="
+                    ./src/images/works/work@1x.jpg 1x,
+                    ./src/images/works/work@2x.jpg 2x
+                  "
                   class="case__img"
                 />
               </div>
@@ -258,50 +289,78 @@
           </div>
         </div>
       </section>
+
       <section class="projects" data-aos="flip-up">
         <div class="container projects__container">
           <h2 class="projects__title" data-aos="zoom-out-up">Наші проекти</h2>
           <p class="projects__text" data-aos="zoom-out-up">
+
             Lorem Ipsum - це текст-"риба", що часто використовується в пресі та
             веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
             латиниці з початку XVI ст.
           </p>
           <ul class="projects__cards">
+
             <li class="card-project" data-aos="flip-right">
+
               <img
-                src="./src/images/projects/project01.jpg"
+                src="./src/images/projects/project@1x.jpg"
+                srcset="
+                  ./src/images/projects/project@1x.jpg 1x,
+                  ./src/images/projects/project@2x.jpg 2x
+                "
                 alt="Проект №1"
                 class="card-project__img"
               />
             </li>
+
             <li class="card-project" data-aos="flip-down">
+
               <img
-                src="./src/images/projects/project01.jpg"
+                src="./src/images/projects/project@1x.jpg"
+                srcset="
+                  ./src/images/projects/project@1x.jpg 1x,
+                  ./src/images/projects/project@2x.jpg 2x
+                "
                 alt="Проект №1"
                 class="card-project__img"
               />
             </li>
+
             <li class="card-project" data-aos="flip-down">
+
               <img
-                src="./src/images/projects/project01.jpg"
+                src="./src/images/projects/project@1x.jpg"
+                srcset="
+                  ./src/images/projects/project@1x.jpg 1x,
+                  ./src/images/projects/project@2x.jpg 2x
+                "
                 alt="Проект №1"
                 class="card-project__img"
               />
             </li>
+
             <li class="card-project" data-aos="flip-left">
+
               <img
-                src="./src/images/projects/project01.jpg"
+                src="./src/images/projects/project@1x.jpg"
+                srcset="
+                  ./src/images/projects/project@1x.jpg 1x,
+                  ./src/images/projects/project@2x.jpg 2x
+                "
                 alt="Проект №1"
                 class="card-project__img"
               />
             </li>
           </ul>
+
           <a href="#" class="projects__button button" data-aos="zoom-in-up"
+
             >Всі проекти</a
           >
         </div>
       </section>
-      <section class="video">
+      <section class="video" id="news">
         <div class="video__container container">
           <h2 class="video__title">Відео про нашу роботу</h2>
           <p class="video__text">Просто подивіться, як ми працюємо</p>
@@ -337,30 +396,54 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacs">
       <div class="footer__container container">
         <div class="footer__top">
           <ul class="footer__list">
+
             <li class="footer__item item-footer" data-aos="flip-left">
               <h2 class="item-footer__title">Контактная информация</h2>
+
               <ul class="item-footer__list">
-                <li class="item-footer__item item-footer__item--mail">
+                <li
+                  class="item-footer__item item-footer__item--mail"
+                  data-aos="fade-up-right"
+                >
                   <a href="mailto:test@test.ua" class="item-footer__link"
                     >test@test.ua</a
                   >
                 </li>
-                <li class="item-footer__item item-footer__item--tel">
+                <li
+                  class="item-footer__item item-footer__item--tel"
+                  data-aos="fade-up-right"
+                >
                   <a href="tel:+380965556699" class="item-footer__link"
                     >+3 8096 555 66 99</a
                   >
                 </li>
-                <li class="item-footer__item item-footer__item--address">
+
+                <li
+                  class="item-footer__item item-footer__item--address"
+                  data-aos="fade-up-right"
+                >
                   <a href="#" class="item-footer__link"
                     ><adress>Тернопіль вул С. Бандери</adress></a
                   >
                 </li>
+
+                <li
+                  class="item-footer__item item-footer__item--address"
+                  data-aos="fade-up-right"
+                >
+                  <a href="#"
+                    ><adress class="item-footer__link"
+                      >Тернопіль вул С. Бандери</adress
+                    ></a
+                  >
+                </li>
               </ul>
             </li>
+
             <li class="footer__item item-footer" data-aos="flip-left">
               <h2 class="item-footer__title" data-aos="fade-right">
                 Основні посилання
@@ -437,6 +520,7 @@
                   <a href="#" class="item-footer__link" data-aos="fade-right"
                     >Twitter</a
                   >
+
                 </li>
               </ul>
             </li>
