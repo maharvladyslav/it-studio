@@ -1,6 +1,6 @@
 .hero {
   height: 100vh;
-  background-image: url(/src/images/hero/background@1x.jpg);
+  background-image: url(../images/hero/background@1x.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,14 +10,13 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(/src/images/hero/background@2x.jpg);
+    background-image: url(../images/hero/background@2x.jpg);
   }
   &__container {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
   &__title {
     color: $colorTextAdditional;

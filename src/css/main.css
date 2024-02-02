@@ -378,7 +378,7 @@ img {
 }
 .hero {
   height: 100vh;
-  background-image: url(/src/images/hero/background@1x.jpg);
+  background-image: url(../images/hero/background@1x.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -387,7 +387,7 @@ img {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(/src/images/hero/background@2x.jpg);
+    background-image: url(../images/hero/background@2x.jpg);
   }
 }
 .hero__container {
@@ -725,14 +725,14 @@ img {
   }
 }
 .video {
-  background-image: url(/src/images/video/work@x1.jpg);
+  background-image: url(../images/video/work@x1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px 0;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .video {
-    background-image: url(/src/images/video/work@2x.jpg);
+    background-image: url(../images/video/work@2x.jpg);
   }
 }
 
