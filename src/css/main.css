@@ -486,6 +486,9 @@ img {
   height: 100px;
   margin-right: 20px;
 }
+.statistics__icon:hover {
+  fill: #000000;
+}
 
 .statistics__count {
   font-size: 36px;
@@ -566,7 +569,7 @@ img {
   margin-bottom: 70px;
 }
 .works__button {
-  flex-shrink: 1;
+  flex-shrink: 0;
 }
 
 .case {
