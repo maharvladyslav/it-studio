@@ -89,6 +89,7 @@ img {
   right: 0;
   left: 0;
   transition: background-color 0.3s linear;
+  z-index: 999;
 }
 .header__container {
   margin: 0 auto;
