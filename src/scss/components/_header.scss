@@ -8,6 +8,12 @@
   &__link {
     color: $colorTextAdditional;
     font-weight: 500;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-block;
+  }
+
+  &__item {
+    position: relative;
   }
 }
 .header {
@@ -34,17 +40,49 @@
   right: 30px;
   opacity: 0;
   transition: opacity 0.3s ease;
+  animation: scrollAnimation 3s cubic-bezier(0.4, 0, 0.2, 1) 0s infinite;
+  display: inline-block;
+
+  &:active {
+    animation-play-state: paused;
+  }
 }
 
 .to-top__svg {
   width: 30px;
   height: 30px;
   fill: $colorTextAdditional;
-
 }
 
 .header.scrolled .to-top__button {
   opacity: 1;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(0);
+  }
+
+  20% {
+    transform: translateY(-50px);
+  }
+
+  40% {
+    transform: translateY(-25px);
+  }
+
+  60% {
+    transform: translateY(-50px);
+  }
+}
+@keyframes borderScale {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(100%);
+  }
 }
 
 @media (min-width: 480px) {
@@ -65,9 +103,45 @@
 @media (min-width: 1200px) {
   .nav {
     padding-inline: 0px;
+
+    &__link:hover {
+      transform: scale(1.2);
+    }
+
+    &__link:focus {
+      transform: scale(1.2);
+    }
+
+    .nav__item:hover::after {
+      content: "";
+      height: 2px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -40px;
+      background-color: $colorTextAdditional;
+      animation: borderScale 0.5s ease 0s 1;
+    }
+
+    .nav__item:focus::after {
+      content: "";
+      height: 2px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -40px;
+      background-color: $colorTextAdditional;
+      animation: borderScale 0.5s ease 0s 1;
+    }
   }
 
   .nav__list {
     justify-content: flex-end;
+  }
+
+  .to-top__button {
+    &:hover {
+      animation-play-state: paused;
+    }
   }
 }

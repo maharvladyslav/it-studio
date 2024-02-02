@@ -6,10 +6,12 @@
     <title>It Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
       rel="stylesheet"
@@ -19,7 +21,7 @@
   <body id="body">
     <header class="header" id="main-header">
       <div class="container header__container">
-        <nav class="nav header__nav" data-menu> 
+        <nav class="nav header__nav" data-menu>
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#" class="nav__link">Головна</a>
@@ -73,9 +75,11 @@
           <div class="services__items">
             <article class="services__item service">
               <div class="service__photo">
-                <svg class="servide__icon">
-                  <use href="./src/images/icons.svg#icon-project"></use>
-                </svg>
+                <div class="photo__border">
+                  <svg class="service__icon">
+                    <use href="./src/images/icons.svg#icon-project"></use>
+                  </svg>
+                </div>
               </div>
               <hgroup class="service__heading">
                 <h3 class="service__title">Створення сайтів</h3>
@@ -87,9 +91,11 @@
             </article>
             <article class="services__item service">
               <div class="service__photo">
-                <svg class="servide__icon">
-                  <use href="./src/images/icons.svg#icon-project"></use>
-                </svg>
+                <div class="photo__border">
+                  <svg class="service__icon">
+                    <use href="./src/images/icons.svg#icon-project"></use>
+                  </svg>
+                </div>
               </div>
               <hgroup class="service__heading">
                 <h3 class="service__title">Створення сайтів</h3>
@@ -101,9 +107,11 @@
             </article>
             <article class="services__item service">
               <div class="service__photo">
-                <svg class="servide__icon">
-                  <use href="./src/images/icons.svg#icon-project"></use>
-                </svg>
+                <div class="photo__border">
+                  <svg class="service__icon">
+                    <use href="./src/images/icons.svg#icon-project"></use>
+                  </svg>
+                </div>
               </div>
               <hgroup class="service__heading">
                 <h3 class="service__title">Створення сайтів</h3>
@@ -134,7 +142,10 @@
             <div class="adventages__photo">
               <img
                 class="adventages__img"
-                src="./src/images/advantages/01.jpg"
+                srcset="
+                /src/images/advantages/adventages@1x.jpg 1x,
+                /src/images/advantages/adventages@1x.jpg 2x"
+                src="/src/images/advantages/adventages@1x.jpg"
                 alt="Високі стандарти розробки"
               />
             </div>
@@ -190,8 +201,12 @@
             <article class="case">
               <div class="case__photo">
                 <img
-                  src="./src/images/works/work.jpg"
+                  src="./src/images/works/work@1x.jpg"
                   alt="Дослідження і упаковка"
+                  srcset="
+                    ./src/images/works/work@1x.jpg 1x,
+                    ./src/images/works/work@2x.jpg 2x
+                  "
                   class="case__img"
                 />
               </div>
@@ -208,8 +223,12 @@
             <article class="case">
               <div class="case__photo">
                 <img
-                  src="./src/images/works/work.jpg"
+                  src="./src/images/works/work@1x.jpg"
                   alt="Дослідження і упаковка"
+                  srcset="
+                    ./src/images/works/work@1x.jpg 1x,
+                    ./src/images/works/work@2x.jpg 2x
+                  "
                   class="case__img"
                 />
               </div>
@@ -226,8 +245,12 @@
             <article class="case">
               <div class="case__photo">
                 <img
-                  src="./src/images/works/work.jpg"
+                  src="./src/images/works/work@1x.jpg"
                   alt="Дослідження і упаковка"
+                  srcset="
+                    ./src/images/works/work@1x.jpg 1x,
+                    ./src/images/works/work@2x.jpg 2x
+                  "
                   class="case__img"
                 />
               </div>
@@ -255,28 +278,44 @@
           <ul class="projects__cards">
             <li class="card-project">
               <img
-                src="./src/images/projects/project01.jpg"
+                src="./src/images/projects/project@1x.jpg"
+                srcset="
+                  ./src/images/projects/project@1x.jpg 1x,
+                  ./src/images/projects/project@2x.jpg 2x
+                "
                 alt="Проект №1"
                 class="card-project__img"
               />
             </li>
             <li class="card-project">
               <img
-                src="./src/images/projects/project01.jpg"
+                src="./src/images/projects/project@1x.jpg"
+                srcset="
+                  ./src/images/projects/project@1x.jpg 1x,
+                  ./src/images/projects/project@2x.jpg 2x
+                "
                 alt="Проект №1"
                 class="card-project__img"
               />
             </li>
             <li class="card-project">
               <img
-                src="./src/images/projects/project01.jpg"
+                src="./src/images/projects/project@1x.jpg"
+                srcset="
+                  ./src/images/projects/project@1x.jpg 1x,
+                  ./src/images/projects/project@2x.jpg 2x
+                "
                 alt="Проект №1"
                 class="card-project__img"
               />
             </li>
             <li class="card-project">
               <img
-                src="./src/images/projects/project01.jpg"
+                src="./src/images/projects/project@1x.jpg"
+                srcset="
+                  ./src/images/projects/project@1x.jpg 1x,
+                  ./src/images/projects/project@2x.jpg 2x
+                "
                 alt="Проект №1"
                 class="card-project__img"
               />
@@ -339,8 +378,10 @@
                   >
                 </li>
                 <li class="item-footer__item item-footer__item--address">
-                  <a href="#" class="item-footer__link"
-                    ><adress>Тернопіль вул С. Бандери</adress></a
+                  <a href="#"
+                    ><adress class="item-footer__link"
+                      >Тернопіль вул С. Бандери</adress
+                    ></a
                   >
                 </li>
               </ul>
@@ -403,6 +444,10 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="/src/js/header-background.js"></script>
     <script src="/src/js/mobile-menu.js"></script>
   </body>
