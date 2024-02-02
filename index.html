@@ -24,19 +24,19 @@
         <nav class="nav header__nav" data-menu>
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link">Головна</a>
+              <a href="#main" class="nav__link">Головна</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Наші проекти</a>
+              <a href="#projects" class="nav__link">Наші проекти</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Послуги</a>
+              <a href="#works" class="nav__link">Послуги</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Новини</a>
+              <a href="#news" class="nav__link">Новини</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Контакти</a>
+              <a href="#contacs" class="nav__link">Контакти</a>
             </li>
           </ul>
           <button class="nav__btn btn-menu" data-open_btn>
@@ -53,13 +53,20 @@
       </div>
     </header>
     <main class="main">
-      <section class="hero">
+      <section class="hero" id="main">
         <div class="container hero__container">
-          <h1 class="hero__title">Передова IT студія</h1>
-          <h2 class="hero__subtitle">
+          <h1 class="hero__title" data-aos="flip-right">Передова IT студія</h1>
+          <h2 class="hero__subtitle" data-aos="flip-left">
             Ми створюємо легкі рішення важких задач і проблем
           </h2>
-          <a href="#" class="button hero__button">Наші проекти</a>
+          <a
+            href="#"
+            class="button hero__button"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            >Наші проекти</a
+          >
         </div>
       </section>
       <section class="services">
@@ -143,8 +150,9 @@
               <img
                 class="adventages__img"
                 srcset="
-                /src/images/advantages/adventages@1x.jpg 1x,
-                /src/images/advantages/adventages@1x.jpg 2x"
+                  /src/images/advantages/adventages@1x.jpg 1x,
+                  /src/images/advantages/adventages@1x.jpg 2x
+                "
                 src="/src/images/advantages/adventages@1x.jpg"
                 alt="Високі стандарти розробки"
               />
@@ -191,14 +199,18 @@
           </footer>
         </div>
       </section>
-      <section class="works">
+      <section class="works" id="works">
         <div class="works__container container">
           <header class="works__header">
-            <h2 class="works__title">Наші роботи на яких ми спеціалізуємось</h2>
-            <a href="" class="works__button button">Всі послуги</a>
+            <h2 class="works__title" data-aos="zoom-in-right">
+              Наші роботи на яких ми спеціалізуємось
+            </h2>
+            <a href="" class="works__button button" data-aos="zoom-in-left"
+              >Всі послуги</a
+            >
           </header>
           <div class="works__cases">
-            <article class="case">
+            <article class="case" data-aos="fade-up" data-aos-duration="3000">
               <div class="case__photo">
                 <img
                   src="./src/images/works/work@1x.jpg"
@@ -220,7 +232,7 @@
               </p>
               <a href="" class="case__link link">Детальніше</a>
             </article>
-            <article class="case">
+            <article class="case" data-aos="fade-up" data-aos-duration="3000">
               <div class="case__photo">
                 <img
                   src="./src/images/works/work@1x.jpg"
@@ -242,7 +254,7 @@
               </p>
               <a href="" class="case__link link">Детальніше</a>
             </article>
-            <article class="case">
+            <article class="case" data-aos="fade-up" data-aos-duration="3000">
               <div class="case__photo">
                 <img
                   src="./src/images/works/work@1x.jpg"
@@ -267,16 +279,24 @@
           </div>
         </div>
       </section>
-      <section class="projects">
+      <section class="projects" id="projects">
         <div class="container projects__container">
-          <h2 class="projects__title">Наші проекти</h2>
-          <p class="projects__text">
+          <h2 class="projects__title" data-aos="flip-right">Наші проекти</h2>
+          <p
+            class="projects__text"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+          >
             Lorem Ipsum - це текст-"риба", що часто використовується в пресі та
             веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
             латиниці з початку XVI ст.
           </p>
           <ul class="projects__cards">
-            <li class="card-project">
+            <li
+              class="card-project"
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+            >
               <img
                 src="./src/images/projects/project@1x.jpg"
                 srcset="
@@ -287,7 +307,11 @@
                 class="card-project__img"
               />
             </li>
-            <li class="card-project">
+            <li
+              class="card-project"
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+            >
               <img
                 src="./src/images/projects/project@1x.jpg"
                 srcset="
@@ -298,7 +322,11 @@
                 class="card-project__img"
               />
             </li>
-            <li class="card-project">
+            <li
+              class="card-project"
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+            >
               <img
                 src="./src/images/projects/project@1x.jpg"
                 srcset="
@@ -309,7 +337,11 @@
                 class="card-project__img"
               />
             </li>
-            <li class="card-project">
+            <li
+              class="card-project"
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+            >
               <img
                 src="./src/images/projects/project@1x.jpg"
                 srcset="
@@ -321,10 +353,16 @@
               />
             </li>
           </ul>
-          <a href="#" class="projects__button button">Всі проекти</a>
+          <a
+            href="#"
+            class="projects__button button"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            >Всі проекти</a
+          >
         </div>
       </section>
-      <section class="video">
+      <section class="video" id="news">
         <div class="video__container container">
           <h2 class="video__title">Відео про нашу роботу</h2>
           <p class="video__text">Просто подивіться, як ми працюємо</p>
@@ -360,24 +398,45 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacs">
       <div class="footer__container container">
         <div class="footer__top">
           <ul class="footer__list">
             <li class="footer__item item-footer">
-              <h2 class="item-footer__title">Контактная информация</h2>
+              <h2 class="item-footer__title" data-aos="flip-left">
+                Контактная информация
+              </h2>
               <ul class="item-footer__list">
-                <li class="item-footer__item item-footer__item--mail">
+                <li
+                  class="item-footer__item item-footer__item--mail"
+                  data-aos="fade-up-right"
+                >
                   <a href="mailto:test@test.ua" class="item-footer__link"
                     >test@test.ua</a
                   >
                 </li>
-                <li class="item-footer__item item-footer__item--tel">
+                <li
+                  class="item-footer__item item-footer__item--tel"
+                  data-aos="fade-up-right"
+                >
                   <a href="tel:+380965556699" class="item-footer__link"
                     >+3 8096 555 66 99</a
                   >
                 </li>
-                <li class="item-footer__item item-footer__item--address">
+
+                <li
+                  class="item-footer__item item-footer__item--address"
+                  data-aos="fade-up-right"
+                >
+                  <a href="#" class="item-footer__link"
+                    ><adress>Тернопіль вул С. Бандери</adress></a
+                  >
+                </li>
+
+                <li
+                  class="item-footer__item item-footer__item--address"
+                  data-aos="fade-up-right"
+                >
                   <a href="#"
                     ><adress class="item-footer__link"
                       >Тернопіль вул С. Бандери</adress
@@ -387,52 +446,58 @@
               </ul>
             </li>
             <li class="footer__item item-footer">
-              <h2 class="item-footer__title">Основні посилання</h2>
+              <h2 class="item-footer__title" data-aos="flip-left">
+                Основні посилання
+              </h2>
               <ul class="item-footer__list">
-                <li class="item-footer__item">
+                <li class="item-footer__item" data-aos="fade-up-right">
                   <a href="#" class="item-footer__link">Головна</a>
                 </li>
-                <li class="item-footer__item">
+                <li class="item-footer__item" data-aos="fade-up-right">
                   <a href="#" class="item-footer__link">Наші проекти</a>
                 </li>
-                <li class="item-footer__item">
+                <li class="item-footer__item" data-aos="fade-up-right">
                   <a href="#" class="item-footer__link">Наші послуги</a>
                 </li>
-                <li class="item-footer__item">
+                <li class="item-footer__item" data-aos="fade-up-right">
                   <a href="#" class="item-footer__link">Контакти</a>
                 </li>
               </ul>
             </li>
             <li class="footer__item item-footer">
-              <h2 class="item-footer__title">Наші проекти</h2>
+              <h2 class="item-footer__title" data-aos="flip-left">
+                Наші проекти
+              </h2>
               <ul class="item-footer__list">
-                <li class="item-footer__item">
+                <li class="item-footer__item" data-aos="fade-up-right">
                   <a href="#" class="item-footer__link">Укрпошта</a>
                 </li>
-                <li class="item-footer__item">
+                <li class="item-footer__item" data-aos="fade-up-right">
                   <a href="#" class="item-footer__link">Нафтогаз</a>
                 </li>
-                <li class="item-footer__item">
+                <li class="item-footer__item" data-aos="fade-up-right">
                   <a href="#" class="item-footer__link">Львівська пивоварня</a>
                 </li>
-                <li class="item-footer__item">
+                <li class="item-footer__item" data-aos="fade-up-right">
                   <a href="#" class="item-footer__link">ТЭЦ Калуша</a>
                 </li>
               </ul>
             </li>
             <li class="footer__item item-footer">
-              <h2 class="item-footer__title">Соціальні мережі</h2>
+              <h2 class="item-footer__title" data-aos="flip-left">
+                Соціальні мережі
+              </h2>
               <ul class="item-footer__list">
-                <li class="item-footer__item">
+                <li class="item-footer__item" data-aos="fade-up-right">
                   <a href="#" class="item-footer__link">LinkedIn</a>
                 </li>
-                <li class="item-footer__item">
+                <li class="item-footer__item" data-aos="fade-up-right">
                   <a href="#" class="item-footer__link">Instagram</a>
                 </li>
-                <li class="item-footer__item">
+                <li class="item-footer__item" data-aos="fade-up-right">
                   <a href="#" class="item-footer__link">Facebook</a>
                 </li>
-                <li class="item-footer__item">
+                <li class="item-footer__item" data-aos="fade-up-right">
                   <a href="#" class="item-footer__link">Twitter</a>
                 </li>
               </ul>
