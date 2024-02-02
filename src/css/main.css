@@ -573,8 +573,9 @@ img {
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid;
-  border-color: #e0e0e0;
-  padding-bottom: 50px;
+  border-color: #999999;
+  padding: 5px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .case__title {
   margin-bottom: 30px;
@@ -621,15 +622,19 @@ img {
   .works__cases {
     flex-direction: row;
     border-bottom: 1px solid;
-    border-color: #e0e0e0;
+    border-color: #999999;
     padding-bottom: 85px;
   }
   .case {
-    border: none;
-    padding: 0;
+    border-bottom: none;
+    border-radius: 10px;
+    overflow: hidden;
   }
   .case__text {
     margin-bottom: 17px;
+  }
+  .case:hover {
+    box-shadow: 0px 0px 4px 4px #999999;
   }
 }
 .projects {
